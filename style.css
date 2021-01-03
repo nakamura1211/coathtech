@@ -102,7 +102,7 @@ hr {
 input, select {
     vertical-align:middle;
 }
-/**/
+/* header */
 #header{
     background:black;
     display: flex;
@@ -128,7 +128,7 @@ input, select {
     text-decoration: none;
     display: block;
 }
-/**/
+/* title */
 #main-title{
     background: url(../coachtech/kadai/eyecatch.jpg);
     height: 700px;
@@ -162,7 +162,7 @@ input, select {
     padding: 3px 0 0 3px;
 }
 .news-title{
-    padding: 10px 0 20px 10px;
+    padding: 10px 0 0 10px;
     font-size: 13px;
 }
 .news-button{
@@ -179,61 +179,51 @@ input, select {
     font-size:  15px;
     display: block;
 }
-/**/
-#misshon{
+/* mission */
+#mission{
     height: 400px;
     background: black;
     position: relative;
 }
-.misshon-wrap{
+.mission-wrap{
     color: white;
     width: 50%;
-    height: 200px;
     position: absolute;
     left: 15%;
     top: 25%;
-    z-index: 100;
+    z-index: 10;
 }
-#misshon h3{
+#mission h3{
     font-size: 20px;
-    padding-bottom: 1.5em;
-}
-#misshon p{
-    font-size: 12px;
-    padding-bottom: 20px;
+    margin-bottom: 1.5em;
     line-height: 1.5;
 }
-#misshon a{
+#mission p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+#mission a{
     color: black;
     background: white;
     text-decoration: none;
     padding: 10px 25px;
     font-size: 12px;
-
 }
-#misshon img{
+#mission img{
     width: 40%;
     height: auto;
     position:absolute;
     right: 10%;
-    top: 30%;
-    z-index: 50;
+    bottom:-10%;
 }
-/**/
-.margin{
-    height: 100px;
-}
-/**/
+/* service */
 #service{
-    height: 1400px;
     background: rgb(231, 231, 231);
     position: relative;
+    margin-top: 100px;
 }
-.service-wrap{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
+
 #service h2{
     text-align: center;
     font-size: 30px;
@@ -242,7 +232,6 @@ input, select {
 }
 .web1{
     width: 30%;
-    height: auto;
     padding: 60px;
     background: white;
     position: absolute;
@@ -271,16 +260,15 @@ input, select {
     display: block;
     width: 50%;
     height: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin: 0 0 0 auto;
+
 }
 .img2{
     display: block;
     width: 50%;
     height: auto;
-    position: absolute;
-    top: 50%;
+    padding: 150px 0;
+
 }
 .web2{
     width: 30%;
@@ -291,7 +279,7 @@ input, select {
     left: 41%;
     font-size: 12px;
 }
-/**/
+/* cmp-rct */
 #cmp-rct{
     
     display: flex;
@@ -340,14 +328,16 @@ input, select {
     font-weight: bold;
     color: white;
 }
-/**/
+/* faq */
 #faq-wrap{
-    margin: 150px 200px;
-    padding: 30px 0;
+    margin: 150px auto;
+    padding: 50px 0;
     background: black;
     display: block;
     text-decoration: none;
     display: flex;
+    width: 80%;
+    box-sizing: border-box;
 }
 #faq-wrap h2{
     font-size: 30px;
@@ -357,19 +347,24 @@ input, select {
 #faq-wrap p{
     color: white;
     margin: auto;
+    padding: 0 70px 0 0;
 }
-/**/
+/* contact */
 #contact{
     background: url(../coachtech/kadai/contact-bg.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
-    height: 400px;
     color: white;
+    line-height: 1.5;
+    position: relative;
 }
 #contact h2{
     font-size: 28px;
     padding: 100px 0 10px 0;
+}
+.jp-contact{
+    font-weight: bold;
 }
 .free{
     font-size: 30px;
@@ -384,9 +379,13 @@ input, select {
     text-decoration: none;
     color: white;
     border: solid 1px white;
-    padding: 10px 30px;
+    padding: 10px 0;
+    display: block;
+    display: inline-block;
+    margin-bottom: 100px;
+    width: 130px;
 }
-
+/* hooter */
 #hooter{
     background:black;
     display: flex;
@@ -410,7 +409,7 @@ input, select {
     color:white;
     text-decoration: none;
 }
-/**/
+/* copyright */
 #copyright{
     background:black;
     color: white;
@@ -420,5 +419,73 @@ input, select {
 }
 
 @media screen and (max-width: 768px){
-    
+
+
+    /* main */
+    #main-title h1{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        font-size: 60px;
+        text-align: center;
+    }
+    .news-wrap{
+        width: 100%;
+    }
+    /* mission */
+    .mission-wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+    }
+    /* service */
+    #service{
+    }
+    .service-wrap{
+    }
+    .web1,
+    .web2{
+        width: 90%;
+        position: static;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .web2{
+    }
+    .img1,
+    .img2{
+        position: static;
+        width: 90%;
+        height: auto;
+    }
+    .img1{
+        margin: 0 auto;
+    }
+    .img2{
+        padding: 0;
+        margin: 50px auto 0;
+    }
+    /* company-recruit */
+    #cmp-rct{
+        flex-wrap: wrap;
+    }
+    .company,
+    .recruit{
+        width: 100%;
+    }
+    .company{
+        margin-top: 40px;
+    }
+    .recruit{
+        margin: 0;
+    }
+    /* faq */
+    #faq-wrap{
+        margin: 20px auto;
+        width: 98%;
+    }
 }
