@@ -133,7 +133,7 @@ input, select {
 }
 /* title */
 #main-title{
-    background: url(../coachtech/kadai/eyecatch.jpg);
+    background: url(kadai/eyecatch.jpg);
     height: 700px;
     background-position: center;
     background-size: cover;
@@ -293,7 +293,7 @@ input, select {
     width: 48%;
     padding: 100px 0;
     text-align: center;
-    background: url(../coachtech/kadai/company.jpeg);
+    background: url(kadai/company.jpeg);
     background-position: center;
     background-size: cover;
     margin-top: 150px;
@@ -314,7 +314,7 @@ input, select {
     width: 48%;
     padding: 100px 0;
     text-align: center;
-    background: url(../coachtech/kadai/recruit.jpg);
+    background: url(kadai/recruit.jpg);
     background-position: center;
     background-size: cover;
     margin-top: 150px;
@@ -354,7 +354,7 @@ input, select {
 }
 /* contact */
 #contact{
-    background: url(../coachtech/kadai/contact-bg.jpg);
+    background: url(kadai/contact-bg.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
